@@ -134,7 +134,7 @@ export default defineComponent({
   },
   props: {
     idSite: {
-      type: [String, Number],
+      type: Number,
       default: null,
     },
   },
@@ -169,7 +169,7 @@ export default defineComponent({
         });
         this.stats = Array.isArray(data) && data.length > 0 ? data[0] : null;
       } catch (e) {
-        this.error = (e?.message) || this.translate('General_Error');
+        this.error = (e?.message);
       } finally {
         this.isLoading = false;
       }

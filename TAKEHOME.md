@@ -25,6 +25,7 @@
 - **When the button is shown**  
   The button only appears when a site is present. right now it's hard-coded. should make it dynamic.
 
+---
 
 ## What I would improve or extend if I had more time
 
