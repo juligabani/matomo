@@ -13,11 +13,7 @@
     <button type="button" class="btn" @click="showModal = true">
       {{ translate('Live_QuickStats') }}
     </button>
-    <MatomoDialog v-model="showModal"
-                  :options="{ dismissible: true }"
-                  class="quick-stats-modal"
-                  style="max-width: 600px;"
-    >
+    <MatomoDialog v-model="showModal" :options="{ dismissible: true }">
       <div class="ui-confirm">
         <h1>{{ translate('Live_QuickStats') }}</h1>
 
@@ -76,14 +72,10 @@
 <style lang="less" scoped>
 
 .quick-stats-footer {
-  position: fixed !important;
-  bottom: 24px !important;
-  right: 24px !important;
-  z-index: 9999 !important;
-}
-
-.quick-stats-modal {
-  max-width: 600px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
 }
 
 .quick-stats-table {
@@ -126,7 +118,7 @@ interface QuickStatsState {
   stats: LiveCounters | null;
 }
 
-const LAST_MINUTES = 120;
+const LAST_MINUTES = 120; // TODO make this dynamic
 export default defineComponent({
   components: {
     MatomoDialog,
