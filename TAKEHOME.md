@@ -23,7 +23,7 @@
   The feature uses `Live.getCounters` and is about live visitor data, so it belongs in the Live plugin. 
 
 - **When the button is shown**  
-  The button only appears when a site is present. right now it's hard-coded. should make it dynamic.
+  The button only appears when a siteId is present and visitor log is enabled. right now siteId is hard-coded. should make it dynamic.
 
 ---
 
@@ -35,8 +35,8 @@
 - **Let the user pick the time range**  
   Add a dropdown or tabs (e.g. last 30 min, 2 hours, 24 hours) and pass the chosen value to `Live.getCounters` as `lastMinutes`.
 
-- **I don't like to add inline css**
-  I have added scoped style, but it's not applying so just added inline. but this needs to refactor.
+- **Check for permission**
+  Apply permission check on Quick Stats button if it's required.
 
 - **Check why Live.getCounters method append some extra params**
   I have used existing method to call `Live.getCounters` API which is already exist. need to check why it's append extra params.
@@ -49,3 +49,5 @@
 
 - **Integration test for the footer hook**  
   A PHP test that triggers `Template.pageFooter` and checks that the Quick Stats `vue-entry` is in the output.
+
+I have added more details about testing in Live/vue/docs/TESTING.md file.

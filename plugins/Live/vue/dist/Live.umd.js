@@ -103,6 +103,24 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__19dc__;
 
 /***/ }),
 
+/***/ "3b75":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "48a5":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_mini_css_extract_plugin_dist_loader_js_ref_11_oneOf_1_0_node_modules_vue_cli_service_node_modules_css_loader_dist_cjs_js_ref_11_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_11_oneOf_1_2_node_modules_less_loader_dist_cjs_js_ref_11_oneOf_1_3_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_1_1_QuickStats_vue_vue_type_style_index_0_id_1b74e82f_lang_less_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("3b75");
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_mini_css_extract_plugin_dist_loader_js_ref_11_oneOf_1_0_node_modules_vue_cli_service_node_modules_css_loader_dist_cjs_js_ref_11_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_11_oneOf_1_2_node_modules_less_loader_dist_cjs_js_ref_11_oneOf_1_3_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_1_1_QuickStats_vue_vue_type_style_index_0_id_1b74e82f_lang_less_scoped_true__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_cli_service_node_modules_mini_css_extract_plugin_dist_loader_js_ref_11_oneOf_1_0_node_modules_vue_cli_service_node_modules_css_loader_dist_cjs_js_ref_11_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_11_oneOf_1_2_node_modules_less_loader_dist_cjs_js_ref_11_oneOf_1_3_node_modules_vue_cli_service_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_1_1_QuickStats_vue_vue_type_style_index_0_id_1b74e82f_lang_less_scoped_true__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+
 /***/ "8bbf":
 /***/ (function(module, exports) {
 
@@ -123,6 +141,7 @@ __webpack_require__.d(__webpack_exports__, "TotalVisitors", function() { return 
 __webpack_require__.d(__webpack_exports__, "LivePage", function() { return /* reexport */ LivePage; });
 __webpack_require__.d(__webpack_exports__, "IndexHeader", function() { return /* reexport */ IndexHeader; });
 __webpack_require__.d(__webpack_exports__, "LastVisits", function() { return /* reexport */ LastVisits; });
+__webpack_require__.d(__webpack_exports__, "QuickStats", function() { return /* reexport */ QuickStats; });
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
@@ -446,6 +465,129 @@ const {
     });
   }
 });
+// CONCATENATED MODULE: ./node_modules/@vue/cli-plugin-babel/node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/@vue/cli-plugin-babel/node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--1-1!./plugins/Live/vue/src/QuickStats/QuickStats.vue?vue&type=template&id=1b74e82f&scoped=true
+
+const _withScopeId = n => (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["pushScopeId"])("data-v-1b74e82f"), n = n(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["popScopeId"])(), n);
+const QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_1 = {
+  key: 0,
+  class: "quick-stats-footer"
+};
+const QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_2 = {
+  class: "ui-confirm"
+};
+const QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_3 = {
+  class: "quick-stats-last-minutes"
+};
+const QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_4 = {
+  key: 0
+};
+const QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_5 = {
+  key: 1,
+  class: "alert alert-danger"
+};
+const QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_6 = {
+  key: 2,
+  class: "quick-stats-content"
+};
+const QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_7 = {
+  class: "quick-stats-table"
+};
+const QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_8 = ["value"];
+function QuickStatsvue_type_template_id_1b74e82f_scoped_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_MatomoLoader = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("MatomoLoader");
+  const _component_MatomoDialog = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("MatomoDialog");
+  return _ctx.idSite ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("button", {
+    type: "button",
+    class: "btn",
+    onClick: _cache[0] || (_cache[0] = $event => _ctx.showModal = true)
+  }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.translate('Live_QuickStats')), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_MatomoDialog, {
+    modelValue: _ctx.showModal,
+    "onUpdate:modelValue": _cache[1] || (_cache[1] = $event => _ctx.showModal = $event),
+    options: {
+      dismissible: true
+    }
+  }, {
+    default: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withCtx"])(() => {
+      var _ctx$stats, _ctx$stats2, _ctx$stats3, _ctx$stats4;
+      return [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_2, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("h1", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.translate('Live_QuickStats')), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("p", QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_3, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.translate('Live_LastMinutes', _ctx.lastMinutes)), 1), _ctx.isLoading ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_4, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_MatomoLoader), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("span", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.translate('General_LoadingData')), 1)])) : _ctx.error ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_5, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.error), 1)) : (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_6, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("table", QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_7, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("tbody", null, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("tr", null, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("td", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.translate('Live_TotalVisits')), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("td", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(((_ctx$stats = _ctx.stats) === null || _ctx$stats === void 0 ? void 0 : _ctx$stats.visits) || 0), 1)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("tr", null, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("td", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.translate('Live_TotalActions')), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("td", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(((_ctx$stats2 = _ctx.stats) === null || _ctx$stats2 === void 0 ? void 0 : _ctx$stats2.actions) || 0), 1)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("tr", null, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("td", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.translate('Live_ColumnNbVisitors')), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("td", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(((_ctx$stats3 = _ctx.stats) === null || _ctx$stats3 === void 0 ? void 0 : _ctx$stats3.visitors) || 0), 1)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("tr", null, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("td", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.translate('Live_VisitsConverted')), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("td", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(((_ctx$stats4 = _ctx.stats) === null || _ctx$stats4 === void 0 ? void 0 : _ctx$stats4.visitsConverted) || 0), 1)])])])])), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("input", {
+        type: "button",
+        value: _ctx.translate('General_Close'),
+        role: "yes",
+        class: "btn"
+      }, null, 8, QuickStatsvue_type_template_id_1b74e82f_scoped_true_hoisted_8)])];
+    }),
+    _: 1
+  }, 8, ["modelValue"])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true);
+}
+// CONCATENATED MODULE: ./plugins/Live/vue/src/QuickStats/QuickStats.vue?vue&type=template&id=1b74e82f&scoped=true
+
+// CONCATENATED MODULE: ./node_modules/@vue/cli-plugin-typescript/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--15-2!./node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--1-1!./plugins/Live/vue/src/QuickStats/QuickStats.vue?vue&type=script&lang=ts
+
+
+const LAST_MINUTES = 120; // TODO make period dynamic
+/* harmony default export */ var QuickStatsvue_type_script_lang_ts = (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["defineComponent"])({
+  components: {
+    MatomoDialog: external_CoreHome_["MatomoDialog"],
+    MatomoLoader: external_CoreHome_["MatomoLoader"]
+  },
+  props: {
+    idSite: {
+      type: Number,
+      default: null
+    }
+  },
+  data() {
+    return {
+      showModal: false,
+      isLoading: false,
+      error: null,
+      stats: null,
+      lastMinutes: LAST_MINUTES
+    };
+  },
+  watch: {
+    showModal(newVal) {
+      if (newVal) {
+        this.fetchStats();
+      }
+    }
+  },
+  methods: {
+    async fetchStats() {
+      if (!this.idSite) return;
+      this.isLoading = true;
+      this.error = null;
+      this.stats = null;
+      try {
+        const data = await external_CoreHome_["AjaxHelper"].fetch({
+          method: 'Live.getCounters',
+          idSite: this.idSite,
+          lastMinutes: LAST_MINUTES
+        });
+        this.stats = Array.isArray(data) && data.length > 0 ? data[0] : null;
+      } catch (e) {
+        this.error = e === null || e === void 0 ? void 0 : e.message;
+      } finally {
+        this.isLoading = false;
+      }
+    }
+  }
+}));
+// CONCATENATED MODULE: ./plugins/Live/vue/src/QuickStats/QuickStats.vue?vue&type=script&lang=ts
+ 
+// EXTERNAL MODULE: ./plugins/Live/vue/src/QuickStats/QuickStats.vue?vue&type=style&index=0&id=1b74e82f&lang=less&scoped=true
+var QuickStatsvue_type_style_index_0_id_1b74e82f_lang_less_scoped_true = __webpack_require__("48a5");
+
+// CONCATENATED MODULE: ./plugins/Live/vue/src/QuickStats/QuickStats.vue
+
+
+
+
+
+QuickStatsvue_type_script_lang_ts.render = QuickStatsvue_type_template_id_1b74e82f_scoped_true_render
+QuickStatsvue_type_script_lang_ts.__scopeId = "data-v-1b74e82f"
+
+/* harmony default export */ var QuickStats = (QuickStatsvue_type_script_lang_ts);
 // CONCATENATED MODULE: ./plugins/Live/vue/src/index.ts
 /*!
  * Matomo - free/libre analytics platform
@@ -453,6 +595,7 @@ const {
  * @link    https://matomo.org
  * @license https://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
+
 
 
 

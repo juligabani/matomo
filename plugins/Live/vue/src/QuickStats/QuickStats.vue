@@ -6,16 +6,14 @@
 -->
 
 <template>
-  <div v-if="idSite"
-       class="quick-stats-footer"
-       style="position: fixed; bottom: 24px; right: 24px; z-index: 9999;"
-  >
+  <div v-if="idSite" class="quick-stats-footer">
     <button type="button" class="btn" @click="showModal = true">
       {{ translate('Live_QuickStats') }}
     </button>
     <MatomoDialog v-model="showModal" :options="{ dismissible: true }">
       <div class="ui-confirm">
         <h1>{{ translate('Live_QuickStats') }}</h1>
+        <p class="quick-stats-last-minutes">{{ translate('Live_LastMinutes', lastMinutes) }}</p>
 
         <div v-if="isLoading">
           <MatomoLoader />
@@ -29,37 +27,21 @@
         <div v-else class="quick-stats-content">
           <table class="quick-stats-table">
             <tbody>
-              <tr style="border-bottom: 1px solid #cccccc;">
-                <td style="padding: 10px 8px 10px 0; vertical-align: middle;">
-                  {{ translate('Live_TotalVisits') }}
-                </td>
-                <td style="padding: 10px 8px 10px 0; vertical-align: middle;">
-                  {{ stats?.visits || 0 }}
-                </td>
+              <tr>
+                <td> {{ translate('Live_TotalVisits') }}</td>
+                <td>{{ stats?.visits || 0 }}</td>
               </tr>
-              <tr style="border-bottom: 1px solid #cccccc;">
-                <td style="padding: 10px 8px 10px 0; vertical-align: middle;">
-                  {{ translate('Live_TotalActions') }}
-                </td>
-                <td style="padding: 10px 8px 10px 0; vertical-align: middle;">
-                  {{ stats?.actions || 0 }}
-                </td>
+              <tr>
+                <td>{{ translate('Live_TotalActions') }}</td>
+                <td>{{ stats?.actions || 0 }}</td>
               </tr>
-              <tr style="border-bottom: 1px solid #cccccc;">
-                <td style="padding: 10px 8px 10px 0; vertical-align: middle;">
-                  {{ translate('Live_ColumnNbVisitors') }}
-                </td>
-                <td style="padding: 10px 8px 10px 0; vertical-align: middle;">
-                  {{ stats?.visitors || 0 }}
-                </td>
+              <tr>
+                <td>{{ translate('Live_ColumnNbVisitors') }}</td>
+                <td>{{ stats?.visitors || 0 }}</td>
               </tr>
-              <tr style="border-bottom: 1px solid #cccccc;">
-                <td style="padding: 10px 8px 10px 0; vertical-align: middle;">
-                  {{ translate('Live_VisitsConverted') }}
-                </td>
-                <td style="padding: 10px 8px 10px 0; vertical-align: middle;">
-                  {{ stats?.visitsConverted || 0 }}
-                </td>
+              <tr>
+                <td>{{ translate('Live_VisitsConverted') }}</td>
+                <td>{{ stats?.visitsConverted || 0 }}</td>
               </tr>
             </tbody>
           </table>
@@ -76,6 +58,12 @@
   bottom: 24px;
   right: 24px;
   z-index: 9999;
+}
+
+.quick-stats-last-minutes {
+  margin: 10px 0 10px 0;
+  font-size: 14px;
+  color: #666;
 }
 
 .quick-stats-table {
@@ -116,9 +104,10 @@ interface QuickStatsState {
   isLoading: boolean;
   error: string | null;
   stats: LiveCounters | null;
+  lastMinutes: number;
 }
 
-const LAST_MINUTES = 120; // TODO make this dynamic
+const LAST_MINUTES = 120; // TODO make period dynamic
 export default defineComponent({
   components: {
     MatomoDialog,
@@ -136,6 +125,7 @@ export default defineComponent({
       isLoading: false,
       error: null,
       stats: null,
+      lastMinutes: LAST_MINUTES,
     };
   },
   watch: {

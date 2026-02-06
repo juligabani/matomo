@@ -39,6 +39,7 @@ This document describes how the Quick Stats feature can test.
 
 **What to test:**
 - `Live.php` → `renderQuickStatsButton()` is hooked to `Template.pageFooter` and appends the Quick Stats Vue entry (`vue-entry="Live.QuickStats"`, `id-site`).
+- Quick Stats is **only** output when the visitor log is enabled: `renderQuickStatsButton()` returns early when `!Live::isVisitorLogEnabled($idSite)` (no Vue entry in the footer).
 
 **Where:** e.g. `plugins/Live/tests/Integration/LiveTest.php`
 
