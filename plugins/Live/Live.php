@@ -60,7 +60,7 @@ class Live extends \Piwik\Plugin
 
     public function renderQuickStatsButton(&$out)
     {
-        $idSite = 1;
+        $idSite = 1; // TODO make site id dynamic
         $out .= '<div vue-entry="Live.QuickStats" id-site="' . (int) $idSite . '"></div>';
     }
 
