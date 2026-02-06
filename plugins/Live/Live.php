@@ -38,6 +38,7 @@ class Live extends \Piwik\Plugin
             'Live.renderVisitorIcons'                => 'renderVisitorIcons',
             'Template.jsGlobalVariables'             => 'addJsGlobalVariables',
             'API.getPagesComparisonsDisabledFor'     => 'getPagesComparisonsDisabledFor',
+            'Template.pageFooter'                    => 'renderQuickStatsButton',
         ];
     }
 
@@ -55,6 +56,12 @@ class Live extends \Piwik\Plugin
         piwik.visitorProfileEnabled = " . json_encode(self::isVisitorProfileEnabled()) . ";
         piwik.visitorLogActionsToDisplayCollapsed = $actionsToDisplayCollapsed;
         ";
+    }
+
+    public function renderQuickStatsButton(&$out)
+    {
+        $idSite = 1;
+        $out .= '<div vue-entry="Live.QuickStats" id-site="' . (int) $idSite . '"></div>';
     }
 
     /**
@@ -207,6 +214,12 @@ class Live extends \Piwik\Plugin
         $translationKeys[] = 'Live_VisitorLog';
         $translationKeys[] = 'General_ColumnNbVisitsDocumentation';
         $translationKeys[] = 'General_ColumnNbActionsDocumentation';
+        $translationKeys[] = 'Live_QuickStats';
+        $translationKeys[] = 'Live_TotalVisits';
+        $translationKeys[] = 'Live_TotalActions';
+        $translationKeys[] = 'Live_ColumnNbVisitors';
+        $translationKeys[] = 'Live_VisitsConverted';
+        $translationKeys[] = 'General_Close';
     }
 
     public function renderAction(&$renderedAction, $action, $previousAction, $visitorDetails)
