@@ -30,22 +30,22 @@
 ## What I would improve or extend if I had more time
 
 - **Make site id dynamic**
-  Right now site id is static, should make it dynamic by understanding code.
+  Right now site id is static, should make it dynamic by understanding existing code.
 
 - **Let the user pick the time range**  
-  Add a dropdown or tabs (e.g. last 30 min, 2 hours, 24 hours) and pass the chosen value to `Live.getCounters` as `lastMinutes`.
+  Add a dropdown (e.g. last 30 min, 60 min) and pass the chosen value to `Live.getCounters` as `lastMinutes`.
+
+- **Apply standard style for UI**
+  Use material UI or existing classes and pattern to keep consistency for styling instead of write own style.
 
 - **Check for permission**
-  Apply permission check on Quick Stats button if it's required.
+  Apply permission check (or other checks) on display Quick Stats button if it's required.
 
 - **Check why Live.getCounters method append some extra params**
   I have used existing method to call `Live.getCounters` API which is already exist. need to check why it's append extra params.
 
-- **UI Screenshot Tests**
-  Add UI Screenshot tests
-
 - **Unit tests for the Vue component**  
-  Add Jest + Vue Test Utils tests.
+  Add Jest + Vue Test Utils tests. It's required to install test-utils package.
 
 - **Integration test for the footer hook**  
   A PHP test that triggers `Template.pageFooter` and checks that the Quick Stats `vue-entry` is in the output.

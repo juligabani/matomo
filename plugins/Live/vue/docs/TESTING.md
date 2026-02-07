@@ -24,7 +24,7 @@ This document describes how the Quick Stats feature can test.
 - **Spec file:** `plugins/Live/vue/src/QuickStats/QuickStats.spec.ts`
 
 ### What Is Tested
-- **Rendering:** Footer is hidden when `idSite` is null; Quick Stats button is shown when `idSite` is set.
+- **Rendering:** Quick Stats button is hidden when `idSite` is null; Quick Stats button is shown when `idSite` is set.
 - **Modal and API:** Clicking the button opens the modal and triggers `fetchStats()`. `AjaxHelper.fetch` is called with `method: 'Live.getCounters'`, `idSite`, and `lastMinutes: 120`.
 - **Data handling:** Stats are set from an object response; when the API returns an array.
 - **Error handling:** On API failure, `error` is set and loading is cleared;
